@@ -1,7 +1,7 @@
 [
     {
       "source": { "table": "dates_by_business_unit_view" },
-      "destination": { "table": "dates_by_business_unit_view" },
+      "destination": { "table": "Business Days" },
       "copySource": {
         "sqlReaderQuery": "select * from [dbo].[dates_by_business_unit_view] WHERE [dbo].[dates_by_business_unit_view].[business_unit_id] NOT IN (5,6,7)"
       }
@@ -95,5 +95,25 @@
       "copySource": {
           "sqlReaderQuery": null
       }
+    },
+    {
+      "source": { "schema": "dbo", "table": "dim_business_unit" },
+      "destination": { "table": "Business Unit" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Campaign" },
+      "destination": { "table": "Campaign" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Company" },
+      "destination": { "table": "Company" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Country" },
+      "destination": { "table": "Country" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "dim_currency" },
+      "destination": { "table": "Currency" }
     }
   ]
