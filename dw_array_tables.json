@@ -1,0 +1,24 @@
+[
+    {
+      "source": { "table": "dates_by_business_unit_view" },
+      "destination": { "table": "dates_by_business_unit_view" },
+      "copySource": {
+        "sqlReaderQuery": "select * from [dbo].[dates_by_business_unit_view] WHERE [dbo].[dates_by_business_unit_view].[business_unit_id] NOT IN (5,6,7)"
+      }
+    },
+    {
+      "source": { "table": "dim_date" },
+      "destination": { "table": "dim_date" },
+      "copySource": { "sqlReaderQuery": null },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    }
+  ]
