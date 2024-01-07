@@ -20,5 +20,80 @@
           }
         }
       }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Account" },
+      "destination": { "table": "Account" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Activation Method" },
+      "destination": { "table": "Activation Method" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bartender Bugs" },
+      "destination": { "table": "Bartender Bugs" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bill To Geography" },
+      "destination": { "table": "Bill To Geography" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bonus Commission Targets" },
+      "destination": { "table": "Bonus Commission Targets" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bonus Sales Targets" },
+      "destination": { "table": "Bonus Sales Targets" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bonus Transactions" },
+      "destination": { "table": "Bonus Transactions" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Budget" },
+      "destination": { "table": "Budget" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Version" },
+      "destination": { "table": "Version" }
+    },
+    {
+      "source": { "schema": "opportunity", "table": "actual_close_date" },
+      "destination": { "table": "actual_close_date" }
+    },
+    {
+      "source": { "schema": "ticket", "table": "Assignee" },
+      "destination": { "table": "Assignee" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Budget and Actuals Currency Rate" },
+      "destination": { "table": "Budget and Actuals Currency Rate" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Budget Version" },
+      "destination": { "table": "Budget Version" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bug Customer Impact" },
+      "destination": { "table": "Bug Customer Impact" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bug Resolution" },
+      "destination": { "table": "Bug Resolution" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bug Version" },
+      "destination": { "table": "Bug Version" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bug Version Bridge" },
+      "destination": { "table": "Bug Version Bridge" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Bug Version Bridge" },
+      "destination": { "table": "Bug Version Bridge" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     }
   ]
