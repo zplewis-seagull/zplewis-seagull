@@ -4,6 +4,16 @@
       "destination": { "table": "Business Days" },
       "copySource": {
         "sqlReaderQuery": "select * from [dbo].[dates_by_business_unit_view] WHERE [dbo].[dates_by_business_unit_view].[business_unit_id] NOT IN (5,6,7)"
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -11,6 +21,16 @@
       "destination": { "table": "Account" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -18,6 +38,16 @@
       "destination": { "table": "Activation Method" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -25,6 +55,16 @@
       "destination": { "table": "Bartender Bugs" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -32,6 +72,16 @@
       "destination": { "table": "Bill To Geography" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -39,6 +89,16 @@
       "destination": { "table": "Bonus Commission Targets" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -46,6 +106,16 @@
       "destination": { "table": "Bonus Sales Targets" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -53,6 +123,16 @@
       "destination": { "table": "Bonus Transactions" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -60,6 +140,16 @@
       "destination": { "table": "Budget" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -67,6 +157,16 @@
       "destination": { "table": "Version" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -74,6 +174,16 @@
       "destination": { "table": "actual_close_date" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -81,6 +191,16 @@
       "destination": { "table": "Assignee" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -88,6 +208,16 @@
       "destination": { "table": "Budget and Actuals Currency Rate" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -95,6 +225,16 @@
       "destination": { "table": "Budget Version" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -102,6 +242,16 @@
       "destination": { "table": "Bug Customer Impact" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -109,6 +259,16 @@
       "destination": { "table": "Bug Resolution" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -116,6 +276,16 @@
       "destination": { "table": "Bug Version" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -123,6 +293,16 @@
       "destination": { "table": "Bug Version Bridge" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -130,6 +310,16 @@
       "destination": { "table": "Bug Version Bridge" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -137,6 +327,16 @@
       "destination": { "table": "Business Unit" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -144,6 +344,16 @@
       "destination": { "table": "Campaign" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -151,6 +361,16 @@
       "destination": { "table": "Company" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -158,6 +378,16 @@
       "destination": { "table": "Country" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -165,6 +395,16 @@
       "destination": { "table": "Currency" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -172,6 +412,16 @@
       "destination": { "table": "Currency Table" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -179,6 +429,16 @@
       "destination": { "table": "Customer" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -216,6 +476,16 @@
       "destination": { "table": "Direct Sales Sums for Dist Rec PBI" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -223,6 +493,16 @@
       "destination": { "table": "Distributor" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -230,6 +510,16 @@
       "destination": { "table": "Distributor Reconciliation File" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -237,6 +527,16 @@
       "destination": { "table": "Distributor Reconciliation Matched" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -244,6 +544,16 @@
       "destination": { "table": "Edition" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -266,6 +576,16 @@
       "destination": { "table": "Employee Monthly Snapshot" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -273,6 +593,16 @@
       "destination": { "table": "End User" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -280,6 +610,16 @@
       "destination": { "table": "Estimated Close Date" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -287,6 +627,16 @@
       "destination": { "table": "Exchange Rate" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -294,6 +644,16 @@
       "destination": { "table": "ExtractDatesByBusinessUnit" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -301,6 +661,16 @@
       "destination": { "table": "ExtractInvoice" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -308,6 +678,16 @@
       "destination": { "table": "ExtractOpportunity" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -315,6 +695,16 @@
       "destination": { "table": "ExtractSalesGoalByBusinessUnit" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -322,6 +712,16 @@
       "destination": { "table": "ExtractSalesOrder" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -329,6 +729,16 @@
       "destination": { "table": "FinanceUserSecurity" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -336,6 +746,16 @@
       "destination": { "table": "Global Sales Targets" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -343,6 +763,16 @@
       "destination": { "table": "Label Metrics" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -350,6 +780,16 @@
       "destination": { "table": "Language" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -357,6 +797,16 @@
       "destination": { "table": "Lead" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -364,6 +814,16 @@
       "destination": { "table": "Ledger Transaction" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -371,6 +831,16 @@
       "destination": { "table": "License" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -378,6 +848,16 @@
       "destination": { "table": "License Monthly Snapshot" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -385,6 +865,16 @@
       "destination": { "table": "License Original" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -392,6 +882,16 @@
       "destination": { "table": "LicenseActivity" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -399,6 +899,16 @@
       "destination": { "table": "Licensing Model" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -406,6 +916,16 @@
       "destination": { "table": "Operating System" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -413,6 +933,16 @@
       "destination": { "table": "Opportunity" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -420,6 +950,16 @@
       "destination": { "table": "PercentAttainmentMaster" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -427,6 +967,16 @@
       "destination": { "table": "PKC Free" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -434,6 +984,16 @@
       "destination": { "table": "PKC Free W Duplicates" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -441,6 +1001,16 @@
       "destination": { "table": "PKC Paid from Free" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -448,6 +1018,16 @@
       "destination": { "table": "PKC Paid from Free w Duplicates" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -455,6 +1035,16 @@
       "destination": { "table": "Printer Hardware" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -462,6 +1052,16 @@
       "destination": { "table": "Priority" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -469,6 +1069,16 @@
       "destination": { "table": "Product" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -476,6 +1086,16 @@
       "destination": { "table": "Product Language" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -483,6 +1103,16 @@
       "destination": { "table": "Purpose" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -490,6 +1120,16 @@
       "destination": { "table": "Registration" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -497,6 +1137,16 @@
       "destination": { "table": "Reseller" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -504,6 +1154,16 @@
       "destination": { "table": "Sale" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -511,6 +1171,16 @@
       "destination": { "table": "Sales Order" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -518,6 +1188,16 @@
       "destination": { "table": "Sales Target" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -525,6 +1205,16 @@
       "destination": { "table": "SalesMembers" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -532,6 +1222,16 @@
       "destination": { "table": "Satisfaction Score" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -539,6 +1239,16 @@
       "destination": { "table": "SecurityKeys" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -546,6 +1256,16 @@
       "destination": { "table": "Settings" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -553,6 +1273,16 @@
       "destination": { "table": "Support Type" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -560,6 +1290,16 @@
       "destination": { "table": "Ticket Status" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -567,6 +1307,16 @@
       "destination": { "table": "Tickets" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -589,6 +1339,16 @@
       "destination": { "table": "UserHierarchy" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -596,6 +1356,16 @@
       "destination": { "table": "Vendor" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -603,6 +1373,16 @@
       "destination": { "table": "Version" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     },
     {
@@ -610,6 +1390,16 @@
       "destination": { "table": "Website Metrics" },
       "copySource": {
           "sqlReaderQuery": null
+      },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
       }
     }
   ]
