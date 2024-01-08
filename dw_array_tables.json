@@ -8,71 +8,122 @@
     },
     {
       "source": { "schema": "dbo", "table": "Account" },
-      "destination": { "table": "Account" }
+      "destination": { "table": "Account" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Activation Method" },
-      "destination": { "table": "Activation Method" }
+      "destination": { "table": "Activation Method" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bartender Bugs" },
-      "destination": { "table": "Bartender Bugs" }
+      "destination": { "table": "Bartender Bugs" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bill To Geography" },
-      "destination": { "table": "Bill To Geography" }
+      "destination": { "table": "Bill To Geography" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bonus Commission Targets" },
-      "destination": { "table": "Bonus Commission Targets" }
+      "destination": { "table": "Bonus Commission Targets" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bonus Sales Targets" },
-      "destination": { "table": "Bonus Sales Targets" }
+      "destination": { "table": "Bonus Sales Targets" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bonus Transactions" },
-      "destination": { "table": "Bonus Transactions" }
+      "destination": { "table": "Bonus Transactions" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Budget" },
-      "destination": { "table": "Budget" }
+      "destination": { "table": "Budget" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Version" },
-      "destination": { "table": "Version" }
+      "destination": { "table": "Version" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "opportunity", "table": "actual_close_date" },
-      "destination": { "table": "actual_close_date" }
+      "destination": { "table": "actual_close_date" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "ticket", "table": "Assignee" },
-      "destination": { "table": "Assignee" }
+      "destination": { "table": "Assignee" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Budget and Actuals Currency Rate" },
-      "destination": { "table": "Budget and Actuals Currency Rate" }
+      "destination": { "table": "Budget and Actuals Currency Rate" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Budget Version" },
-      "destination": { "table": "Budget Version" }
+      "destination": { "table": "Budget Version" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bug Customer Impact" },
-      "destination": { "table": "Bug Customer Impact" }
+      "destination": { "table": "Bug Customer Impact" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bug Resolution" },
-      "destination": { "table": "Bug Resolution" }
+      "destination": { "table": "Bug Resolution" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bug Version" },
-      "destination": { "table": "Bug Version" }
+      "destination": { "table": "Bug Version" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bug Version Bridge" },
-      "destination": { "table": "Bug Version Bridge" }
+      "destination": { "table": "Bug Version Bridge" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Bug Version Bridge" },
@@ -83,31 +134,52 @@
     },
     {
       "source": { "schema": "dbo", "table": "dim_business_unit" },
-      "destination": { "table": "Business Unit" }
+      "destination": { "table": "Business Unit" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Campaign" },
-      "destination": { "table": "Campaign" }
+      "destination": { "table": "Campaign" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Company" },
-      "destination": { "table": "Company" }
+      "destination": { "table": "Company" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Country" },
-      "destination": { "table": "Country" }
+      "destination": { "table": "Country" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "dim_currency" },
-      "destination": { "table": "Currency" }
+      "destination": { "table": "Currency" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "dim_currency_rate" },
-      "destination": { "table": "Currency Table" }
+      "destination": { "table": "Currency Table" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Customer" },
-      "destination": { "table": "Customer" }
+      "destination": { "table": "Customer" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "table": "dim_date" },
@@ -141,23 +213,38 @@
     },
     {
       "source": { "schema": "dbo", "table": "DirectSalesSums_byPO_forPBI" },
-      "destination": { "table": "Direct Sales Sums for Dist Rec PBI" }
+      "destination": { "table": "Direct Sales Sums for Dist Rec PBI" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Distributor" },
-      "destination": { "table": "Distributor" }
+      "destination": { "table": "Distributor" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Distributor Reconciliation File" },
-      "destination": { "table": "Distributor Reconciliation File" }
+      "destination": { "table": "Distributor Reconciliation File" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Distributor Reconciliation Matched" },
-      "destination": { "table": "Distributor Reconciliation Matched" }
+      "destination": { "table": "Distributor Reconciliation Matched" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Edition" },
-      "destination": { "table": "Edition" }
+      "destination": { "table": "Edition" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "table": "mdm.Employee" },
@@ -176,179 +263,311 @@
     },
     {
       "source": { "schema": "dbo", "table": "Employee Monthly Snapshot" },
-      "destination": { "table": "Employee Monthly Snapshot" }
+      "destination": { "table": "Employee Monthly Snapshot" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "End User" },
-      "destination": { "table": "End User" }
+      "destination": { "table": "End User" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Estimated Close Date" },
-      "destination": { "table": "Estimated Close Date" }
+      "destination": { "table": "Estimated Close Date" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "dim_currency_rate" },
-      "destination": { "table": "Exchange Rate" }
+      "destination": { "table": "Exchange Rate" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "view_ExtractDatesByBusinessUnit" },
-      "destination": { "table": "ExtractDatesByBusinessUnit" }
+      "destination": { "table": "ExtractDatesByBusinessUnit" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "view_ExtractInvoice" },
-      "destination": { "table": "ExtractInvoice" }
+      "destination": { "table": "ExtractInvoice" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "view_ExtractOpportunity" },
-      "destination": { "table": "ExtractOpportunity" }
+      "destination": { "table": "ExtractOpportunity" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "view_ExtractSalesGoalByBusinessUnit" },
-      "destination": { "table": "ExtractSalesGoalByBusinessUnit" }
+      "destination": { "table": "ExtractSalesGoalByBusinessUnit" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "view_ExtractSalesOrder" },
-      "destination": { "table": "ExtractSalesOrder" }
+      "destination": { "table": "ExtractSalesOrder" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "FinanceUserSecurity" },
-      "destination": { "table": "FinanceUserSecurity" }
+      "destination": { "table": "FinanceUserSecurity" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Global Sales Targets" },
-      "destination": { "table": "Global Sales Targets" }
+      "destination": { "table": "Global Sales Targets" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Label Metrics" },
-      "destination": { "table": "Label Metrics" }
+      "destination": { "table": "Label Metrics" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Language" },
-      "destination": { "table": "Language" }
+      "destination": { "table": "Language" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Lead" },
-      "destination": { "table": "Lead" }
+      "destination": { "table": "Lead" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Ledger Transaction" },
-      "destination": { "table": "Ledger Transaction" }
+      "destination": { "table": "Ledger Transaction" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "pkc", "table": "product_key_code_view" },
-      "destination": { "table": "License" }
+      "destination": { "table": "License" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "License Monthly Snapshot" },
-      "destination": { "table": "License Monthly Snapshot" }
+      "destination": { "table": "License Monthly Snapshot" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "License" },
-      "destination": { "table": "License Original" }
+      "destination": { "table": "License Original" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "LicenseActivity" },
-      "destination": { "table": "LicenseActivity" }
+      "destination": { "table": "LicenseActivity" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Licensing Model" },
-      "destination": { "table": "Licensing Model" }
+      "destination": { "table": "Licensing Model" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Operating System" },
-      "destination": { "table": "Operating System" }
+      "destination": { "table": "Operating System" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Opportunity" },
-      "destination": { "table": "Opportunity" }
+      "destination": { "table": "Opportunity" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "mdm", "table": "PercentAttainmentMaster" },
-      "destination": { "table": "PercentAttainmentMaster" }
+      "destination": { "table": "PercentAttainmentMaster" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "PKC Free" },
-      "destination": { "table": "PKC Free" }
+      "destination": { "table": "PKC Free" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "PKC Free W Duplicates" },
-      "destination": { "table": "PKC Free W Duplicates" }
+      "destination": { "table": "PKC Free W Duplicates" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "PKC Paid from Free" },
-      "destination": { "table": "PKC Paid from Free" }
+      "destination": { "table": "PKC Paid from Free" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "PKC Paid from Free w Duplicates" },
-      "destination": { "table": "PKC Paid from Free w Duplicates" }
+      "destination": { "table": "PKC Paid from Free w Duplicates" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Printer Hardware" },
-      "destination": { "table": "Printer Hardware" }
+      "destination": { "table": "Printer Hardware" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "ticket", "table": "Priority" },
-      "destination": { "table": "Priority" }
+      "destination": { "table": "Priority" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Product" },
-      "destination": { "table": "Product" }
+      "destination": { "table": "Product" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Product Language" },
-      "destination": { "table": "Product Language" }
+      "destination": { "table": "Product Language" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Purpose" },
-      "destination": { "table": "Purpose" }
+      "destination": { "table": "Purpose" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "view_registration" },
-      "destination": { "table": "Registration" }
+      "destination": { "table": "Registration" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Reseller" },
-      "destination": { "table": "Reseller" }
+      "destination": { "table": "Reseller" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Sale" },
-      "destination": { "table": "Sale" }
+      "destination": { "table": "Sale" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Sales Order" },
-      "destination": { "table": "Sales Order" }
+      "destination": { "table": "Sales Order" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "sales_targets" },
-      "destination": { "table": "Sales Target" }
+      "destination": { "table": "Sales Target" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "mdm", "table": "SalesMembers" },
-      "destination": { "table": "SalesMembers" }
+      "destination": { "table": "SalesMembers" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "ticket", "table": "Satisfaction Score" },
-      "destination": { "table": "Satisfaction Score" }
+      "destination": { "table": "Satisfaction Score" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "SecurityKeys" },
-      "destination": { "table": "SecurityKeys" }
+      "destination": { "table": "SecurityKeys" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Settings" },
-      "destination": { "table": "Settings" }
+      "destination": { "table": "Settings" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "ticket", "table": "Support Type" },
-      "destination": { "table": "Support Type" }
+      "destination": { "table": "Support Type" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "ticket", "table": "Ticket Status" },
-      "destination": { "table": "Ticket Status" }
+      "destination": { "table": "Ticket Status" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "ticket", "table": "Tickets" },
-      "destination": { "table": "Tickets" }
+      "destination": { "table": "Tickets" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "table": "mdm.Employee" },
@@ -367,18 +586,30 @@
     },
     {
       "source": { "schema": "dbo", "table": "UserHierarchy" },
-      "destination": { "table": "UserHierarchy" }
+      "destination": { "table": "UserHierarchy" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Vendor" },
-      "destination": { "table": "Vendor" }
+      "destination": { "table": "Vendor" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Version" },
-      "destination": { "table": "Version" }
+      "destination": { "table": "Version" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     },
     {
       "source": { "schema": "dbo", "table": "Website Metrics" },
-      "destination": { "table": "Website Metrics" }
+      "destination": { "table": "Website Metrics" },
+      "copySource": {
+          "sqlReaderQuery": null
+      }
     }
   ]
