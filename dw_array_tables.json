@@ -162,7 +162,7 @@
     {
       "source": { "table": "mdm.Employee" },
       "destination": { "table": "Employee" },
-      "copySource": { "sqlReaderQuery": "SELECT Email, COALESCE(TimeZone_Name, \'Pacific Standard Time\') AS TimeZone, N\'SEANET\\\' + SUBSTRING(Email, 0, CHARINDEX(\'@\', Email, 1)) AS DomainName FROM mdm.Employee" },
+      "copySource": { "sqlReaderQuery": "SELECT Email, COALESCE(TimeZone_Name, 'Pacific Standard Time') AS TimeZone, N'SEANET' + SUBSTRING(Email, 0, CHARINDEX('@', Email, 1)) AS DomainName FROM mdm.Employee" },
       "copyActivity": {
         "translator": {
           "type": "TabularTranslator",
