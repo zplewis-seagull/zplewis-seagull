@@ -1,6 +1,6 @@
 [
     {
-      "source": { "table": "dates_by_business_unit_view" },
+      "source": { "schema": "dbo", "table": "dates_by_business_unit_view" },
       "destination": { "table": "Business Days" },
       "copySource": {
         "sqlReaderQuery": "select * from [dbo].[dates_by_business_unit_view] WHERE [dbo].[dates_by_business_unit_view].[business_unit_id] NOT IN (5,6,7)"
@@ -171,7 +171,7 @@
     },
     {
       "source": { "schema": "opportunity", "table": "actual_close_date" },
-      "destination": { "table": "actual_close_date" },
+      "destination": { "table": "Actual Close Date" },
       "copySource": {
           "sqlReaderQuery": null
       },
@@ -442,7 +442,7 @@
       }
     },
     {
-      "source": { "table": "dim_date" },
+      "source": { "schema": "dbo", "table": "dim_date" },
       "destination": { "table": "Date" },
       "copySource": { "sqlReaderQuery": null },
       "copyActivity": {
@@ -457,7 +457,7 @@
       }
     },
     {
-      "source": { "table": "dim_date" },
+      "source": { "schema": "dbo", "table": "dim_date" },
       "destination": { "table": "Date Age" },
       "copySource": { "sqlReaderQuery": "SELECT dim_date.date_value AS Date,\nDATEDIFF(DAY, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Days],      \nDATEDIFF(MONTH, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Months], \nDATEDIFF(QUARTER, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Quarters],      \nDATEDIFF(YEAR, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Years], \ntz.name AS time_zone  \nFROM \ndbo.dim_date\n CROSS APPLY (SELECT DISTINCT TimeZone_Name AS name FROM mdm.Employee WHERE TimeZone_Name IS NOT NULL) AS tz"},
       "copyActivity": {
@@ -557,7 +557,7 @@
       }
     },
     {
-      "source": { "table": "mdm.Employee" },
+      "source": { "schema": "mdm", "table": "Employee" },
       "destination": { "table": "Employee" },
       "copySource": { "sqlReaderQuery": "SELECT Email, COALESCE(TimeZone_Name, 'Pacific Standard Time') AS TimeZone, N'SEANET' + SUBSTRING(Email, 0, CHARINDEX('@', Email, 1)) AS DomainName FROM mdm.Employee" },
       "copyActivity": {
@@ -1320,7 +1320,7 @@
       }
     },
     {
-      "source": { "table": "mdm.Employee" },
+      "source": { "schema": "mdm", "table": "Employee" },
       "destination": { "table": "TimeZone" },
       "copySource": { "sqlReaderQuery": "SELECT DISTINCT COALESCE(TimeZone_Name, 'Pacific Standard Time') AS TimeZone FROM mdm.Employee" },
       "copyActivity": {
