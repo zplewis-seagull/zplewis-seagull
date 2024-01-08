@@ -7,21 +7,6 @@
       }
     },
     {
-      "source": { "table": "dim_date" },
-      "destination": { "table": "dim_date" },
-      "copySource": { "sqlReaderQuery": null },
-      "copyActivity": {
-        "translator": {
-          "type": "TabularTranslator",
-          "typeConversion": true,
-          "typeConversionSettings": {
-            "allowDataTruncation": true,
-            "treatBooleanAsNumber": false
-          }
-        }
-      }
-    },
-    {
       "source": { "schema": "dbo", "table": "Account" },
       "destination": { "table": "Account" }
     },
@@ -115,5 +100,78 @@
     {
       "source": { "schema": "dbo", "table": "dim_currency" },
       "destination": { "table": "Currency" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "dim_currency_rate" },
+      "destination": { "table": "Currency Table" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Customer" },
+      "destination": { "table": "Customer" }
+    },
+    {
+      "source": { "table": "dim_date" },
+      "destination": { "table": "Date" },
+      "copySource": { "sqlReaderQuery": null },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "source": { "table": "dim_date" },
+      "destination": { "table": "Date Age" },
+      "copySource": { "sqlReaderQuery": "SELECT dim_date.date_value AS Date,\nDATEDIFF(DAY, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Days],      \nDATEDIFF(MONTH, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Months], \nDATEDIFF(QUARTER, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Quarters],      \nDATEDIFF(YEAR, dim_date.date_value, CAST(GETUTCDATE() AT TIME ZONE 'UTC' AT TIME ZONE tz.name AS DATETIME)) AS [Age in Years], \ntz.name AS time_zone  \nFROM \ndbo.dim_date\n CROSS APPLY (SELECT DISTINCT TimeZone_Name AS name FROM mdm.Employee WHERE TimeZone_Name IS NOT NULL) AS tz"},
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "source": { "schema": "dbo", "table": "DirectSalesSums_byPO_forPBI" },
+      "destination": { "table": "Direct Sales Sums for Dist Rec PBI" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Distributor" },
+      "destination": { "table": "Distributor" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Distributor Reconciliation File" },
+      "destination": { "table": "Distributor Reconciliation File" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Distributor Reconciliation Matched" },
+      "destination": { "table": "Distributor Reconciliation Matched" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Edition" },
+      "destination": { "table": "Edition" }
+    },
+    {
+      "source": { "table": "mdm.Employee" },
+      "destination": { "table": "Employee" },
+      "copySource": { "sqlReaderQuery": "SELECT Email, COALESCE(TimeZone_Name, \'Pacific Standard Time\') AS TimeZone, N\'SEANET\\\' + SUBSTRING(Email, 0, CHARINDEX(\'@\', Email, 1)) AS DomainName FROM mdm.Employee" },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
     }
   ]
