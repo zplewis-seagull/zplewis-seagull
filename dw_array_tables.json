@@ -173,5 +173,212 @@
           }
         }
       }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Employee Monthly Snapshot" },
+      "destination": { "table": "Employee Monthly Snapshot" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "End User" },
+      "destination": { "table": "End User" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Estimated Close Date" },
+      "destination": { "table": "Estimated Close Date" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "dim_currency_rate" },
+      "destination": { "table": "Exchange Rate" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "view_ExtractDatesByBusinessUnit" },
+      "destination": { "table": "ExtractDatesByBusinessUnit" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "view_ExtractInvoice" },
+      "destination": { "table": "ExtractInvoice" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "view_ExtractOpportunity" },
+      "destination": { "table": "ExtractOpportunity" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "view_ExtractSalesGoalByBusinessUnit" },
+      "destination": { "table": "ExtractSalesGoalByBusinessUnit" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "view_ExtractSalesOrder" },
+      "destination": { "table": "ExtractSalesOrder" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "FinanceUserSecurity" },
+      "destination": { "table": "FinanceUserSecurity" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Global Sales Targets" },
+      "destination": { "table": "Global Sales Targets" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Label Metrics" },
+      "destination": { "table": "Label Metrics" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Language" },
+      "destination": { "table": "Language" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Lead" },
+      "destination": { "table": "Lead" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Ledger Transaction" },
+      "destination": { "table": "Ledger Transaction" }
+    },
+    {
+      "source": { "schema": "pkc", "table": "product_key_code_view" },
+      "destination": { "table": "License" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "License Monthly Snapshot" },
+      "destination": { "table": "License Monthly Snapshot" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "License" },
+      "destination": { "table": "License Original" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "LicenseActivity" },
+      "destination": { "table": "LicenseActivity" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Licensing Model" },
+      "destination": { "table": "Licensing Model" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Operating System" },
+      "destination": { "table": "Operating System" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Opportunity" },
+      "destination": { "table": "Opportunity" }
+    },
+    {
+      "source": { "schema": "mdm", "table": "PercentAttainmentMaster" },
+      "destination": { "table": "PercentAttainmentMaster" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "PKC Free" },
+      "destination": { "table": "PKC Free" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "PKC Free W Duplicates" },
+      "destination": { "table": "PKC Free W Duplicates" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "PKC Paid from Free" },
+      "destination": { "table": "PKC Paid from Free" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "PKC Paid from Free w Duplicates" },
+      "destination": { "table": "PKC Paid from Free w Duplicates" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Printer Hardware" },
+      "destination": { "table": "Printer Hardware" }
+    },
+    {
+      "source": { "schema": "ticket", "table": "Priority" },
+      "destination": { "table": "Priority" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Product" },
+      "destination": { "table": "Product" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Product Language" },
+      "destination": { "table": "Product Language" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Purpose" },
+      "destination": { "table": "Purpose" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "view_registration" },
+      "destination": { "table": "Registration" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Reseller" },
+      "destination": { "table": "Reseller" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Sale" },
+      "destination": { "table": "Sale" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Sales Order" },
+      "destination": { "table": "Sales Order" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "sales_targets" },
+      "destination": { "table": "Sales Target" }
+    },
+    {
+      "source": { "schema": "mdm", "table": "SalesMembers" },
+      "destination": { "table": "SalesMembers" }
+    },
+    {
+      "source": { "schema": "ticket", "table": "Satisfaction Score" },
+      "destination": { "table": "Satisfaction Score" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "SecurityKeys" },
+      "destination": { "table": "SecurityKeys" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Settings" },
+      "destination": { "table": "Settings" }
+    },
+    {
+      "source": { "schema": "ticket", "table": "Support Type" },
+      "destination": { "table": "Support Type" }
+    },
+    {
+      "source": { "schema": "ticket", "table": "Ticket Status" },
+      "destination": { "table": "Ticket Status" }
+    },
+    {
+      "source": { "schema": "ticket", "table": "Tickets" },
+      "destination": { "table": "Tickets" }
+    },
+    {
+      "source": { "table": "mdm.Employee" },
+      "destination": { "table": "TimeZone" },
+      "copySource": { "sqlReaderQuery": "SELECT DISTINCT COALESCE(TimeZone_Name, 'Pacific Standard Time') AS TimeZone FROM mdm.Employee" },
+      "copyActivity": {
+        "translator": {
+          "type": "TabularTranslator",
+          "typeConversion": true,
+          "typeConversionSettings": {
+            "allowDataTruncation": true,
+            "treatBooleanAsNumber": false
+          }
+        }
+      }
+    },
+    {
+      "source": { "schema": "dbo", "table": "UserHierarchy" },
+      "destination": { "table": "UserHierarchy" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Vendor" },
+      "destination": { "table": "Vendor" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Version" },
+      "destination": { "table": "Version" }
+    },
+    {
+      "source": { "schema": "dbo", "table": "Website Metrics" },
+      "destination": { "table": "Website Metrics" }
     }
   ]
