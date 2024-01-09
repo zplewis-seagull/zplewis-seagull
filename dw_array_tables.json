@@ -606,7 +606,7 @@
       }
     },
     {
-      "source": { "schema": "dbo", "table": "Estimated Close Date" },
+      "source": { "schema": "dbo", "table": "estimated_close_date" },
       "destination": { "table": "Estimated Close Date" },
       "copySource": {
           "sqlReaderQuery": null
